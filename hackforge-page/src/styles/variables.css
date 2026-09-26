@@ -1,0 +1,23 @@
+@font-face {
+  font-family: 'Terminess';
+  src: url('/fonts/TerminessNerdFontMono-Regular.ttf') format('truetype');
+  font-style: normal;
+  font-display: swap;
+}
+
+:root {
+  --paper: #eeede7;
+  --paper-alt: #e2e1da;
+  --ink: #111512;
+  --ink-soft: #252a26;
+  --green: #37b667;
+  --green-light: #62ca86;
+  --green-dark: #10281c;
+  --border: rgba(17, 21, 18, .24);
+  --muted: #686c67;
+  --display: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  --body: Inter, 'Helvetica Neue', Arial, sans-serif;
+  --mono: 'Terminess', 'SFMono-Regular', Consolas, monospace;
+  --max: 1480px;
+  --gutter: clamp(1rem, 4vw, 4.5rem);
+}

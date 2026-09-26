@@ -6,7 +6,7 @@ export const event = {
   teamSize: '03',
   fee: '₹600',
   prizePool: '₹15,000',
-  registrationUrl: null,
+  registrationUrl: 'https://unstop.com/o/OXEWrDB',
 }
 
 export const tracks = [
@@ -31,5 +31,5 @@ export const faqs = [
   ['How many people can be on a team?', 'Teams are listed as three members in the supplied event material.'],
   ['How does the event work?', 'Round 1 is an online qualifier on 11 October. Selected teams move to the overnight, in-person round at MPSTME on 17–18 October.'],
   ['What should teams build?', 'Take on a complex problem and forge a working solution. Architecture, testing and clear engineering decisions matter.'],
-  ['Where can I register?', 'The official registration URL is not present in the current project yet. This page is ready for the final Unstop link as soon as it is confirmed.'],
+  ['Where can I register?', 'Registration is live on Unstop. Use any Register button on this page to open the official event listing.'],
 ]

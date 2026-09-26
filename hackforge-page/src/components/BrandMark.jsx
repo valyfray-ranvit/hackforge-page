@@ -1,3 +1,3 @@
 export default function BrandMark() {
-  return <span className="brand-monogram" aria-hidden="true">F/OSS</span>
+  return <span className="brand-mark"><img src="/assets/foss-logo.jpeg" alt="" /></span>
 }

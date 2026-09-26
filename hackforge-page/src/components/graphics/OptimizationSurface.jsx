@@ -34,7 +34,7 @@ const columnPaths = Array.from({ length: columns }, (_, col) => {
 
 export default function OptimizationSurface() {
   return (
-    <svg className="technical-graphic optimization-surface" viewBox="0 0 560 285" role="img" aria-labelledby="surface-title surface-desc">
+    <svg className="technical-graphic optimization-surface" viewBox="0 0 560 285" preserveAspectRatio="xMidYMid meet" role="img" aria-labelledby="surface-title surface-desc">
       <title id="surface-title">Three-dimensional optimisation surface</title>
       <desc id="surface-desc">A dense mathematical wireframe mesh with two peaks, intersecting rows and columns, perspective depth and coordinate axes.</desc>
       <g className="surface-axis"><path d="M32 236h494M54 251 32 236l22-15M526 236l-15-8M526 236l-15 9" /><path d="M280 258V28m0 0-8 18m8-18 8 18" /></g>

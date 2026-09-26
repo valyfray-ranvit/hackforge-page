@@ -1,4 +1,5 @@
 import Reveal from './Reveal'
+import { event } from '../data/event'
 
 export default function RegisterCTA() {
   return (
@@ -6,8 +7,8 @@ export default function RegisterCTA() {
       <div className="register-eyebrow"><span>FOSS CLUB MPSTME</span><span>APPLICATION / 2026</span></div>
       <h2 className="display-xl"><span>READY</span><span>TO <em>FORGE?</em></span></h2>
       <div className="register-action">
-        <button type="button" disabled title="The official registration URL is not yet present in the project">REGISTER ON UNSTOP <span aria-hidden="true">↗</span></button>
-        <p>OFFICIAL LINK<br />PENDING CONFIRMATION</p>
+        <a href={event.registrationUrl} target="_blank" rel="noreferrer">REGISTER ON UNSTOP <span aria-hidden="true">↗</span></a>
+        <p>OFFICIAL EVENT<br />UNSTOP LISTING</p>
       </div>
     </Reveal>
   )

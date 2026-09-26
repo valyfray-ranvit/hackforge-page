@@ -9,7 +9,7 @@
 .hero h1 span:nth-child(2) { animation: hero-right .72s .28s both var(--mechanical-ease); }
 .hero h1 span:nth-child(3) { animation: hero-rise .68s .4s both var(--mechanical-ease); }
 .hero .issue-code, .hero-declaration { animation: hero-rise .55s .52s both var(--mechanical-ease); }
-.campus-collage { animation: clip-in .78s .57s both var(--mechanical-ease); }
+.poster-frame { animation: clip-in .78s .57s both var(--mechanical-ease); }
 .hero-note { animation: hero-rise .58s .72s both var(--mechanical-ease); }
 
 .reveal { opacity: 0; transform: translateY(42px); transition: opacity .68s ease, transform .72s var(--mechanical-ease); }

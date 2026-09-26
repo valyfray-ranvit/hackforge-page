@@ -23,7 +23,7 @@ function WireBlock({ x, y, w, h, d, label, index }) {
 
 export default function AutomationWireframe() {
   return (
-    <svg className="technical-graphic automation-wireframe" viewBox="0 0 560 260" role="img" aria-labelledby="automation-title automation-desc">
+    <svg className="technical-graphic automation-wireframe" viewBox="0 0 560 260" preserveAspectRatio="xMidYMid meet" role="img" aria-labelledby="automation-title automation-desc">
       <title id="automation-title">Automation infrastructure wireframe</title>
       <desc id="automation-desc">An isometric engineering blueprint showing connected buildings, devices, sensor nodes and routed signals.</desc>
       <defs>

@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react'
 import BrandMark from './BrandMark'
+import { event } from '../data/event'
 
 const links = ['about', 'tracks', 'timeline', 'prizes', 'faq']
 
@@ -21,7 +22,7 @@ export default function Navbar() {
       </button>
       <nav id="site-nav" className={open ? 'nav-open' : ''} aria-label="Main navigation">
         {links.map((link) => <a key={link} href={`#${link}`} onClick={() => setOpen(false)}>{link}</a>)}
-        <a className="nav-register" href="#register" onClick={() => setOpen(false)}>Register <span aria-hidden="true">↗</span></a>
+        <a className="nav-register" href={event.registrationUrl} target="_blank" rel="noreferrer" onClick={() => setOpen(false)}>Register <span aria-hidden="true">↗</span></a>
       </nav>
     </header>
   )

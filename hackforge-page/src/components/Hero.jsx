@@ -1,3 +1,5 @@
+import PosterFrame from './PosterFrame'
+
 export default function Hero() {
   return (
     <section className="hero" id="top" aria-labelledby="hero-title">
@@ -8,11 +10,7 @@ export default function Hero() {
           <h1 id="hero-title" className="display-xl"><span>HACK</span><span>FORGE</span><span className="year">2026</span></h1>
           <p className="hero-declaration">24 HOURS. &nbsp; REAL PROBLEMS. &nbsp; NO SHORTCUTS.</p>
         </div>
-        <figure className="campus-collage">
-          <div className="crop-marks" aria-hidden="true" />
-          <img src="/assets/campus-reference.jpeg" alt="Black-and-white MPSTME campus collage from the supplied Hackforge poster reference" />
-          <figcaption><span>SAME CAMPUS.<br />HIGHER IDEAS.</span><small>ARCHIVE / MPSTME / 01</small></figcaption>
-        </figure>
+        <PosterFrame src="/assets/hackforge-poster.jpeg" alt="Official Hackforge event poster supplied by FOSS Club MPSTME" />
         <aside className="hero-note" aria-label="Event statement">
           <span>REAL PEOPLE.<br />REAL ENGINEERING.</span>
           <svg viewBox="0 0 120 44" aria-hidden="true"><path d="M3 35c25 2 50-5 72-25M68 4l10 5-4 10" /></svg>

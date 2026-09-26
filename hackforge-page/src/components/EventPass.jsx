@@ -21,7 +21,7 @@ export default function EventPass() {
             <div><dt>ROUND 2</dt><dd>{event.roundTwo.date}<br />{event.roundTwo.time}<br />{event.roundTwo.place}</dd></div>
             <div><dt>JUDGING</dt><dd>{event.judging}</dd></div>
           </dl>
-          <a className="register-stamp" href="#register">REGISTER <span>↘</span></a>
+          <a className="register-stamp" href={event.registrationUrl} target="_blank" rel="noreferrer">REGISTER <span aria-hidden="true">↘</span></a>
         </div>
       </article>
       <div className="stats-strip" aria-label="Event statistics">

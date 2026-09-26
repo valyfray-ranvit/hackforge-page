@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import EditorialLabel from './EditorialLabel'
 import { faqs } from '../data/event'
+import Reveal from './Reveal'
 
 function FAQItem({ question, answer, open, onToggle, id }) {
   return (
@@ -14,9 +15,9 @@ function FAQItem({ question, answer, open, onToggle, id }) {
 export default function FAQ() {
   const [open, setOpen] = useState(0)
   return (
-    <section className="faq content-section" id="faq">
+    <Reveal as="section" className="faq content-section" id="faq">
       <EditorialLabel number="004">FAQ / Field notes</EditorialLabel>
-      <div className="faq-layout"><h2>Questions,<br />answered.</h2><div>{faqs.map(([q, a], i) => <FAQItem key={q} question={q} answer={a} id={i} open={open === i} onToggle={() => setOpen(open === i ? -1 : i)} />)}</div></div>
-    </section>
+      <div className="faq-layout"><h2 className="section-title"><span>Questions,</span><span>answered.</span></h2><div>{faqs.map(([q, a], i) => <FAQItem key={q} question={q} answer={a} id={i} open={open === i} onToggle={() => setOpen(open === i ? -1 : i)} />)}</div></div>
+    </Reveal>
   )
 }

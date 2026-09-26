@@ -5,7 +5,7 @@ export default function Hero() {
       <div className="hero-grid">
         <div className="hero-title-wrap">
           <p className="issue-code">ISSUE 01 / BUILD://2026</p>
-          <h1 id="hero-title"><span>HACK</span><span>FORGE</span><span className="year">2026</span></h1>
+          <h1 id="hero-title" className="display-xl"><span>HACK</span><span>FORGE</span><span className="year">2026</span></h1>
           <p className="hero-declaration">24 HOURS. &nbsp; REAL PROBLEMS. &nbsp; NO SHORTCUTS.</p>
         </div>
         <figure className="campus-collage">

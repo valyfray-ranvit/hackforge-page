@@ -1,5 +1,6 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
+import '@fontsource-variable/tektur'
 import App from './App'
 import './styles/variables.css'
 import './styles/globals.css'

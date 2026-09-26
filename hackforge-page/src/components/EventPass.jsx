@@ -1,4 +1,5 @@
 import { event } from '../data/event'
+import Reveal from './Reveal'
 
 function Barcode() {
   return <div className="barcode" aria-hidden="true">{Array.from({ length: 42 }, (_, i) => <i key={i} style={{ width: `${(i % 4) + 1}px` }} />)}</div>
@@ -6,11 +7,11 @@ function Barcode() {
 
 export default function EventPass() {
   return (
-    <section className="pass-wrap" aria-labelledby="pass-title">
+    <Reveal as="section" className="pass-wrap" aria-labelledby="pass-title">
       <article className="event-pass">
         <div className="pass-main">
           <div className="pass-meta"><span>FOSS_MPSTME</span><span>ADMIT / 03</span></div>
-          <h2 id="pass-title">EVENT<br />PASS</h2>
+          <h2 id="pass-title" className="display-lg">EVENT<br />PASS</h2>
           <Barcode />
           <p>24 HOURS // REAL PROBLEMS // NO SHORTCUTS</p>
         </div>
@@ -28,6 +29,6 @@ export default function EventPass() {
         <div><small>REGISTRATION FEE</small><strong>{event.fee}</strong><span>PER TEAM</span></div>
         <div className="highlight"><small>PRIZE POOL</small><strong>{event.prizePool}</strong><span>TOTAL</span></div>
       </div>
-    </section>
+    </Reveal>
   )
 }
